@@ -50,6 +50,16 @@
   },
   "private": true,
   "eslintConfig": {
-    "extends": "universe/native"
+    "extends": "universe/native",
+    "rules": {
+      "no-restricted-imports": [
+        "error",
+        {
+          "patterns": [
+            "@/features/*/*"
+          ]
+        }
+      ]
+    }
   }
 }
